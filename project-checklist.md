@@ -69,6 +69,8 @@ Use Vite to create React project
 - [ ] Copy `Card.jsx` to `src/components/shared/Card.jsx`
 - [ ] Copy `Swatch.jsx` to `src/components/shared/Swatch.jsx`
 
+### * Main App Again
+    * [ ] Copy code from artifact `App.js` to `src/App.jsx` (replace existing)
 
 ## ✅ Phase 3: Feature Components
 
