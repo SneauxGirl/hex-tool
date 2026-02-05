@@ -54,7 +54,7 @@ hex-tool/
 │   │   ├── v2-with-harmonies.jsx
 │   │   │    ├── v2-1-with-split-comp.jsx
 │   │   ├── v3-add-shades-tints.jsx
-│   │   ├── v4-full-suite.jsx
+│   │   ├── v4-setup-incremental-guide.md
 │   │   └── README.md
 │   ├── CHANGELOG.md            # Detailed version history
 │   └── screenshots/            # Visual documentation

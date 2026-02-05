@@ -89,12 +89,10 @@ Use Vite to create React project
 - [ ] Verify utility functions are exported correctly
 - [ ] Confirm constants are imported where needed
 
-    * [ ] Update `src/components/Tweaker.jsx` (COMPLETE - copy from artifacts)
-
 ## ✅ Phase 4: Testing
 
-- [ ] Run `npm start`
-- [ ] Verify app loads at `http://localhost:3000`
+- [ ] Run `npm dev`
+- [ ] Verify app loads at `http://localhost:5173 or as directed`
 - [ ] Test Tweaker tab:
   - [ ] Hex input accepts valid values
   - [ ] RGB breakdown displays correctly
@@ -116,6 +114,11 @@ Use Vite to create React project
 ## ✅ Phase 6: Implement Remaining Components
 
 Work through each component systematically:
+
+### Tweaker Component
+- [ ] Copy Complete Tweaker generation logic from artifact
+- [ ] Test all components
+- [ ] Commit: `"feat: implement Tweaker component with RGB controls and quick adjustments"`
 
 ### Harmonies Component
 - [ ] Copy harmony generation logic from artifact
