@@ -1,6 +1,10 @@
-CHECKLIST AS PROVIDED BY CLAUDE
-BEWARE: NOT in the same order as setup-guide
-## Notes show as double indent with *
+Checklist as provided by Claude
+
+## NOTE: FOLLOW SETUP-GUIDE over Checklist ##
+Claude created large discrepancies between the Checklist and Setup-Guide
+TODO: Review and update for historic consistency.
+Where the Checklist and Setup-Guide differ, use the Setup-Guide
+## Change notes show as double indent with *
 
 # Project Setup Checklist
 
@@ -34,6 +38,10 @@ Use Vite to create React project
 - [ ] Copy `SETUP-GUIDE.md` to root
 - [ ] Copy `PROJECT-CHECKLIST.md` (this file) to root
 
+### * Main App - moved from end, recommend this order (reversed)
+  * [ ] Update `src/index.css` with utility classes (see SETUP-GUIDE.md)
+    * [ ] Copy text code from `SETUP-GUIDE.md` to `src/App.jsx` (replace existing) and check on host
+
     ## ✅ * Phase 5: Git Setup *
 
     - [ ] Run `git init`
@@ -43,6 +51,7 @@ Use Vite to create React project
     - [ ] Create GitHub repository
     - [ ] Add remote: `git remote add origin <your-repo-url>`
     - [ ] Push: `git push -u origin main`
+
 
 ### Documentation
 - [ ] Copy `CHANGELOG.md` to `docs/CHANGELOG.md`
@@ -60,11 +69,6 @@ Use Vite to create React project
 ### Shared Components
 - [ ] Copy `Card.jsx` to `src/components/shared/Card.jsx`
 - [ ] Copy `Swatch.jsx` to `src/components/shared/Swatch.jsx`
-
-### Main App - recommend this order (reversed)
-  * [ ] Update `src/index.css` with utility classes (see SETUP-GUIDE.md)
-    * [ ] Copy text code from `SETUP-GUIDE.md` to `src/App.jsx` (replace existing) and check on host
-- [ ] Copy `App.jsx` to `src/App.jsx` (replace existing)
 
 
 ## ✅ Phase 3: Feature Components
@@ -103,15 +107,8 @@ Use Vite to create React project
   - [ ] Resize browser window
   - [ ] Check mobile view
 
-## ✅ Phase 5: Git Setup
+    ## ✅ Phase 5: Git Setup - moved to Phase 2 per setup-guide
 
-- [ ] Run `git init`
-- [ ] Create `.gitignore` (should already exist from CRA)
-- [ ] Review staged files
-- [ ] Initial commit: `git commit -m "Initial commit: v1.0.0 with Tweaker"`
-- [ ] Create GitHub repository
-- [ ] Add remote: `git remote add origin <your-repo-url>`
-- [ ] Push: `git push -u origin main`
 
 ## ✅ Phase 6: Implement Remaining Components
 
