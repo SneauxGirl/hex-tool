@@ -32,12 +32,6 @@ Use Vite to create React project
 
 ## ✅ Phase 2: Core Files
 
-### Root Directory
-- [ ] Copy `README.md` to root
-- [ ] Update `package.json` (add keywords, author, repo info)
-- [ ] Copy `SETUP-GUIDE.md` to root
-- [ ] Copy `PROJECT-CHECKLIST.md` (this file) to root
-
 ### * Main App - moved from end, recommend this order (reversed)
   * [ ] Update `src/index.css` with utility classes (see SETUP-GUIDE.md)
     * [ ] Copy text code from `SETUP-GUIDE.md` to `src/App.jsx` (replace existing) and check on host
@@ -52,6 +46,11 @@ Use Vite to create React project
     - [ ] Add remote: `git remote add origin <your-repo-url>`
     - [ ] Push: `git push -u origin main`
 
+  ### * Root Directory - to align with SETUP-GUIDE
+- [ ] Update `package.json` (add keywords, author, repo info)
+ [ ] Copy `README.md` to root - Kept the larger README from separate Claude file download
+- [ ] Copy `SETUP-GUIDE.md` to root
+- [ ] Copy `PROJECT-CHECKLIST.md` (this file) to root
 
 ### Documentation
 - [ ] Copy `CHANGELOG.md` to `docs/CHANGELOG.md`

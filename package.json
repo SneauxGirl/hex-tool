@@ -1,7 +1,7 @@
 {
   "name": "hex-tool",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.0",
   "type": "module",
   "description": "A comprehensive color tool for designers and developers",
   "keywords": [
@@ -12,7 +12,9 @@
     "accessibility",
     "wcag",
     "color-blindness",
-    "color-theory"
+    "color-theory",
+    "react",
+    "vite"
   ],
   "author": "Heather Hugo <heatherh@liyudev.com>",
   "license": "MIT",
