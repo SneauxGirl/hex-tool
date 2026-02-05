@@ -1,5 +1,5 @@
- /*** Card Component
- * Reusable card wrapper with theme support
+ /*** CARD COMPONENT
+ * Reusable CARD wrapper with theme support
  */
 
 function Card({ t, children, className = '', title, subtitle }) {

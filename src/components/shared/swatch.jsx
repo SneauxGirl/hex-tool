@@ -1,5 +1,5 @@
 /**
- * Swatch Component
+ * SWATCH COMPONENT
  * Clickable color swatch with label
  */
 
