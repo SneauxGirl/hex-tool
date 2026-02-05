@@ -677,7 +677,6 @@ git commit -m "feat: add application shell with theme system and navigation"
 
 ### Step 7.2: Test Tweaker
 ```bash
-# VS Code Terminal
 npm run dev
 ```
 

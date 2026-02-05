@@ -76,8 +76,8 @@ Use Vite to create React project
 
 ### Create Component Files
 
-- [ ] Create `src/components/Tweaker.jsx` (COMPLETE - copy from artifacts)
-- [ ] Create `src/components/Harmonies.jsx` (STUB - see SETUP-GUIDE.md)
+- [ ] Create `src/components/Tweaker.jsx` (STUB - see SETUP-GUIDE.md)
+- [ ] Create `src/components/Harmonies.jsx` (STUB)
 - [ ] Create `src/components/TintsShades.jsx` (STUB)
 - [ ] Create `src/components/HueRotate.jsx` (STUB)
 - [ ] Create `src/components/Contrast.jsx` (STUB)
@@ -88,6 +88,8 @@ Use Vite to create React project
 - [ ] Check all components are imported in `App.jsx`
 - [ ] Verify utility functions are exported correctly
 - [ ] Confirm constants are imported where needed
+
+    * [ ] Update `src/components/Tweaker.jsx` (COMPLETE - copy from artifacts)
 
 ## ✅ Phase 4: Testing
 
