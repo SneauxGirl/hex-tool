@@ -817,7 +817,6 @@ If you see any errors, check:
 
 ### Step 10.3: Create Release Tag
 ```bash
-# VS Code Terminal
 git tag -a v1.0.0 -m "Release v1.0.0: Full feature set with all 6 tabs"
 git push origin main
 git push origin v1.0.0
