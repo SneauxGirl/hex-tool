@@ -60,6 +60,7 @@ Use Vite to create React project
 - [ ] Save artifact v2.1 code to `docs/prototypes/v2-1-with-split-comp.jsx`
 - [ ] Save artifact v3 code to `docs/prototypes/v3-add-shades-tints.jsx`
     * [ ] Create and save screenshots of visible changes to docs
+    * [ ] Create and save screenshots original setup-guide with v4 component code
 
 ### Utilities
 - [ ] Copy `colorUtils.js` to `src/utils/colorUtils.js`
@@ -190,13 +191,13 @@ Consider adding these features next:
 
 ## 📝 Notes
 
-**Current Status:** `[Fill in current phase]`
+**Current Status:** `Complete`
 
-**Completed:** `[List completed components]`
+**Completed:** `Tweaker` `Harmonies` `TintShades` `HueRotate` `Contrast` `Color Vision`
 
-**In Progress:** `[Current component being worked on]`
+**In Progress:** `none`
 
-**Blockers:** `[Any issues encountered]`
+**Blockers:** `swapped from single page format to components on v4 for scalable growth and maintenance`
 
 ---
 

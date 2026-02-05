@@ -2,7 +2,7 @@
 
 A comprehensive web-based color tool for designers and developers. Learn how hex codes and color shifts work, explore color harmonies, test accessibility, and simulate color vision deficiencies — all in one place.
 
-![Hex Tool Screenshot](docs/screenshots/main-interface.png)
+![Hex Tool Screenshot](docs/screenshots/hex-tool-v4-tweaker-defaultstart.png)
 
 ## 🌟 Features
 
@@ -14,6 +14,9 @@ A comprehensive web-based color tool for designers and developers. Learn how hex
 - **Contrast Checker** - WCAG AA/AAA compliance testing with live preview
 - **Color Vision Simulation** - Test how colors appear with protanopia, deuteranopia, and tritanopia
 - **Theme Support** - 5 background themes for easy comparisons (Light, Dark, Navy, Forest, Burgundy)
+
+### Planned updates (v1.0)
+- **Styling** - Correct known visual issues, such as making "Darker" text lighter
 
 ## 🚀 Getting Started
 
@@ -55,12 +58,13 @@ hex-tool/
 │   │   │    ├── v2-1-with-split-comp.jsx
 │   │   ├── v3-add-shades-tints.jsx
 │   │   ├── v4-setup-incremental-guide.md
-│   │   └── README.md
+│   │   └── README.md           # Development - Archival
 │   ├── CHANGELOG.md            # Detailed version history
 │   └── screenshots/            # Visual documentation
 ├── public/
 │   ├── index.html
-│   └── favicon.ico
+│   ├── hex-tool-tnsp-favicon.io  #Favicon - transparent background 
+│   └── favicon.ico             # Favicon - white background
 ├── src/
 │   ├── App.jsx                 # Main application component
 │   ├── index.js                # Entry point
@@ -91,7 +95,7 @@ This project began as a series of Claude.ai artifacts while I was learning about
 2. **v2** - Added color harmonies (complementary, analogous, triadic)
 3. **v2.1** - Added split complementary harmonies
 4. **v3** - Added tints/shades
-3. **v3** - Full suite with hue rotation, contrast checker, and CVD simulation
+5. **v4, prod version 1.0.0** - Full suite with hue rotation, contrast checker, and CVD simulation
 
 Each prototype shows the iterative design process and learning journey.
 
