@@ -1,7 +1,7 @@
 /**
  * THIS IS THE REACTOR CORE
  * Color Utilities
- * All color conversion and manipulation functions live here
+ * All color conversion and manipulation functions
  */
 
 // ─── BASIC CONVERSIONS ─────────────────────────────────────────────────────

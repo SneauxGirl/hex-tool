@@ -21,7 +21,7 @@ Use Vite to create React project
     * [ ] Confirm running on `http://localhost:5173`
     * [ ] Close with `ctrl+c`
     * [ ] Navigate back to hex-tool folder `cd ..`
-- [ ] Create directory structure:
+- [ ] Create directory structure: (SETUP addslater but it doesn't hurt to add them now)
   - [ ] `mkdir -p src/components/shared`
   - [ ] `mkdir -p src/utils`
   - [ ] `mkdir -p docs/prototypes`
@@ -52,7 +52,7 @@ Use Vite to create React project
 - [ ] Copy `SETUP-GUIDE.md` to root
 - [ ] Copy `PROJECT-CHECKLIST.md` (this file) to root
 
-### Documentation
+### Documentation (not in Setup?)
 - [ ] Copy `CHANGELOG.md` to `docs/CHANGELOG.md`
 - [ ] Create `docs/prototypes/README.md`
 - [ ] Save artifact v1 code to `docs/prototypes/v1-basic-tweaker.jsx`
