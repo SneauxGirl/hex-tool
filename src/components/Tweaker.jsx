@@ -131,7 +131,9 @@ function Tweaker({ hex, setHex, t }) {
               key={adjustment.id}
               onClick={() => handleQuickAdjustment(adjustment.id)}
               className="px-3 py-2 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity"
-              style={{ background: adjustment.bg, color: '#1f2937' }}
+              style={{ 
+                background: (adjustment.bg && adjustment.color) ? adjustment.bg : t.card, 
+                color: (adjustment.bg && adjustment.color) ? adjustment.color : t. text }}
             >
               {adjustment.label}
             </button>

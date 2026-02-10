@@ -19,12 +19,34 @@ function App() {
   const fullHex = `#${hex}`;
   const rgb = hexToRgb(fullHex);
 
+// Build the background style with correct layer order
+  const backgroundStyle = theme === 'light'
+    ? {
+        background: `
+          url('/hex-pattern-left.png') left top no-repeat,
+          url('/hex-pattern-right.png') right bottom no-repeat,
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2)),
+          linear-gradient(135deg, #d946ef 0%, #ec4899 40%, #f97316 65%, #fbbf24 100%)
+        `,
+        backgroundSize: 'auto min(60vh, 50vw), auto min(60vh, 50vw), auto, auto'
+      }
+    : {
+        background: `
+          url('/hex-pattern-left.png') left top no-repeat,
+          url('/hex-pattern-right.png') right bottom no-repeat,
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2)),
+          ${t.bg}
+        `,
+        backgroundSize: 'auto min(60vh, 50vw), auto min(60vh, 50vw), auto, auto'
+      };
+
   const handleHexInput = (e) => {
     const value = e.target.value.replace('#', '').toUpperCase();
     if (/^[0-9A-Fa-f]{0,6}$/.test(value)) {
       setHex(value);
     }
   };
+
 
   const renderTabContent = () => {
     const props = { hex, setHex, t };
@@ -48,15 +70,22 @@ function App() {
   };
 
   return (
-    <div 
-      style={{ background: t.bg, minHeight: '100vh', transition: 'background 0.3s' }} 
-      className="p-4"
-    >
+<div 
+  style={{ 
+    ...backgroundStyle,
+    minHeight: '100vh', 
+    transition: 'background 0.3s' 
+  }} 
+  className="p-4"
+>
       <div className="max-w-4xl mx-auto">
         
         {/* Header */}
         <div className="flex flex-wrap items-center justify-between mb-3 gap-2">
-          <h1 style={{ color: t.text }} className="text-xl font-bold">
+          <h1 style={{ 
+            color: 'white',
+            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'
+          }} className="text-3xl font-bold">
             🎨 Hex Tool
           </h1>
           
@@ -70,7 +99,7 @@ function App() {
                 style={{
                   background: THEMES[themeKey].bg,
                   color: THEMES[themeKey].text,
-                  border: theme === themeKey ? '2px solid #60a5fa' : `1px solid ${THEMES[themeKey].border}`
+                  border: theme === themeKey ? '2px solid #1B5998' : `1px solid ${THEMES[themeKey].border}`
                 }}
               >
                 {themeKey}
@@ -125,7 +154,7 @@ function App() {
               onClick={() => setActiveTab(tab.id)}
               className="px-3 py-1.5 rounded-lg text-sm font-semibold"
               style={{
-                background: activeTab === tab.id ? '#3b82f6' : t.card,
+                background: activeTab === tab.id ? '#267fd9' : t.card,
                 color: activeTab === tab.id ? '#fff' : t.text,
                 border: `1px solid ${t.border}`
               }}

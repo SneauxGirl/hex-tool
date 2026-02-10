@@ -157,12 +157,12 @@ export const getColorNameFromHue = (hue) => {
 // ─── QUICK ADJUSTMENTS ─────────────────────────────────────────────────────
 
 export const QUICK_ADJUSTMENTS = [
-  { id: 'brighter', label: '☀️ Brighter', bg: '#fef08a' },
-  { id: 'darker', label: '🌙 Darker', bg: '#4a5568' },
-  { id: 'vibrant', label: '✨ More Vibrant', bg: '#e9d5ff' },
-  { id: 'muted', label: '🌫️ More Muted', bg: '#d1d5db' },
-  { id: 'warmer', label: '🔥 Warmer', bg: '#fed7aa' },
-  { id: 'cooler', label: '❄️ Cooler', bg: '#bfdbfe' }
+  { id: 'brighter', label: '☀️ Brighter', bg: '#fef08a', color: '#1f2937'},
+  { id: 'darker', label: '🌙 Darker', bg: '#4a5568', color: '#FBFBFB' },
+  { id: 'vibrant', label: '✨ More Vibrant', bg: '#e9d5ff', color: '#1f2937'},
+  { id: 'muted', label: '🌫️ More Muted', bg: '#d1d5db', color: '#1f2937'},
+  { id: 'warmer', label: '🔥 Warmer', bg: '#fed7aa', color: '#1f2937' },
+  { id: 'cooler', label: '❄️ Cooler', bg: '#bfdbfe', color: '#1f2937' }
 ];
 
 // ─── RGB CHANNEL INFO ──────────────────────────────────────────────────────
