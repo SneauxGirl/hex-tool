@@ -20,25 +20,29 @@ function App() {
   const rgb = hexToRgb(fullHex);
 
 // Build the background style with correct layer order
-  const backgroundStyle = theme === 'light'
-    ? {
-        background: `
-          url('/hex-pattern-left.png') left top no-repeat,
-          url('/hex-pattern-right.png') right bottom no-repeat,
-          linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2)),
-          linear-gradient(135deg, #d946ef 0%, #ec4899 40%, #f97316 65%, #fbbf24 100%)
-        `,
-        backgroundSize: 'auto min(60vh, 50vw), auto min(60vh, 50vw), auto, auto'
-      }
-    : {
-        background: `
-          url('/hex-pattern-left.png') left top no-repeat,
-          url('/hex-pattern-right.png') right bottom no-repeat,
-          linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2)),
-          ${t.bg}
-        `,
-        backgroundSize: 'auto min(60vh, 50vw), auto min(60vh, 50vw), auto, auto'
-      };
+const backgroundStyle = theme === 'light'
+  ? {
+      backgroundImage: `
+        url('/hex-pattern-left.png'),
+        url('/hex-pattern-right.png'),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2)),
+        linear-gradient(135deg, #d946ef 0%, #ec4899 40%, #f97316 65%, #fbbf24 100%)
+      `,
+      backgroundPosition: 'left top, right bottom, center, center',
+      backgroundRepeat: 'no-repeat, no-repeat, no-repeat, no-repeat',
+      backgroundSize: 'auto min(60vh, 50vw), auto min(60vh, 50vw), auto, auto'
+    }
+  : {
+      backgroundImage: `
+        url('/hex-pattern-left.png'),
+        url('/hex-pattern-right.png'),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2)),
+        linear-gradient(${t.bg}, ${t.bg})
+      `,
+      backgroundPosition: 'left top, right bottom, center, center',
+      backgroundRepeat: 'no-repeat, no-repeat, no-repeat, no-repeat',
+      backgroundSize: 'auto min(60vh, 50vw), auto min(60vh, 50vw), auto, auto'
+    };
 
   const handleHexInput = (e) => {
     const value = e.target.value.replace('#', '').toUpperCase();

@@ -335,7 +335,7 @@ function Contrast({ hex, t }) {
           <div style={{ color: t.muted }} className="text-xs space-y-1 mb-3">
             <div>• <strong style={{ color: t.text }}>Mid-tones</strong> (25-75% brightness: grays, pastels) - need extreme light or dark pairs</div>
             <div>• <strong style={{ color: t.text }}>Yellow</strong> - requires dark text, hard to read on white</div>
-            <div>• <strong style={{ color: t.text }}>Similar brightness</strong> - like teal on orange</div>
+            <div>• <strong style={{ color: t.text }}>Similar brightness in contrasting hues</strong> - like teal on orange</div>
           </div>
 
           <p style={{ color: t.text }} className="text-xs font-semibold mb-1">Pro Tips:</p>
