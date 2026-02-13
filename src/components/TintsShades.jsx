@@ -22,7 +22,7 @@ function TintsShades({ hex, setHex, t }) {
 
   return (
     <Card t={t} title="Tints & Shades" subtitle="Pure color mixing — click to set as base">
-      <div className="grid grid-cols-5 gap-2">
+      <div className="grid grid-cols-5 gap-x-2 gap-y-4">
         {colors.map((color, index) => (
           <Swatch
             key={index}
