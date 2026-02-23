@@ -2,7 +2,7 @@
 
 A comprehensive web-based color tool for designers and developers. Learn how hex codes and color shifts work, explore color harmonies, test accessibility, and simulate color vision deficiencies — all in one place.
 
-![Hex Tool Screenshot](docs/screenshots/hex-tool-v4-tweaker-defaultstart.png)
+![Hex Tool Screenshot](docs/screenshots/Hex-Tool-v4-defaultstyled.png)
 
 ## 🌟 Features
 
@@ -111,7 +111,7 @@ This project was built to:
 ## 🛠️ Technologies Used
 
 - **React** - UI framework
-- **Tailwind CSS** (via inline styles) - Styling
+- **Tailwind CSS** - Styling
 - **JavaScript ES6+** - Logic and utilities
 - No external color libraries - all algorithms implemented from scratch for learning
 
