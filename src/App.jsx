@@ -80,18 +80,43 @@ const backgroundStyle = theme === 'light'
     minHeight: '100vh', 
     transition: 'background 0.3s' 
   }} 
-  className="p-4"
+  className="relative p-4"
 >
       <div className="max-w-4xl mx-auto">
         
         {/* Header */}
         <div className="flex flex-wrap items-center justify-between mb-3 gap-2">
-          <h1 style={{ 
-            color: 'white',
-            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'
-          }} className="text-3xl font-bold">
-            🎨 Hex Tool
-          </h1>
+          <div className="flex items-center gap-2">
+            <h1 style={{ 
+              color: 'white',
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'
+            }} className="text-3xl font-bold">
+              🎨 Hex Tool
+            </h1>
+            <a
+              className="github-link corner-github-link ml-[4px] inline-flex h-7 w-7 items-center justify-center rounded-full border-[1.5px] border-current text-white/90 hover:text-white transition-colors"
+              href="https://github.com/SneauxGirl/hex-tool"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Hex Tool on GitHub"
+              title="Open Hex Tool on GitHub"
+            >
+              <svg
+                className="github-logo w-4 h-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M9 19c-4 1.2-4-2-6-2"></path>
+                <path d="M15 22v-3.1a3.3 3.3 0 00-.9-2.6c3 0 6-1.4 6-6.4A5 5 0 0019 6.7 4.6 4.6 0 0019 3s-1.2-.4-4 1.5a13.8 13.8 0 00-6 0C6.2 2.6 5 3 5 3a4.6 4.6 0 000 3.7A5 5 0 003 9.9c0 5 3 6.4 6 6.4a3.3 3.3 0 00-.9 2.6V22"></path>
+              </svg>
+            </a>
+          </div>
           
           {/* Theme Switcher */}
           <div className="flex gap-1 flex-wrap">
@@ -171,6 +196,13 @@ const backgroundStyle = theme === 'light'
         {/* Tab Content */}
         {renderTabContent()}
       </div>
+      <img
+        src="/hhugo-signature.png"
+        alt=""
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-2 right-4 h-12 w-auto select-none opacity-90 sm:bottom-3 sm:h-16 lg:bottom-4 lg:h-20"
+        style={{ filter: 'brightness(0) invert(1)' }}
+      />
     </div>
   );
 }
