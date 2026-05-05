@@ -4,6 +4,10 @@ A comprehensive web-based color tool for designers and developers. Learn how hex
 
 ![Hex Tool Screenshot](docs/screenshots/Hex-Tool-v4-defaultstyled.png)
 
+## 🚀 Live Demo
+
+[View the App →](https://hex-tool.vercel.app)
+
 ## 🌟 Features
 
 ### Current Features (v1.0)
